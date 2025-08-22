@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RavenWave Studios</title>
+
+    <meta property="og:title" content="RavenWave Studios">
+    <meta property="og:description" content="Built for artists who live in the shadows of sound.">
+    <meta property="og:image" content="IMG/hero-img" >
+    <link rel="icon" type="image/x-icon" href="IMG/Raven.ico">
+
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+    <header>
+        <img src="IMG/Logo.png" alt="RavenWave">
+        <!-- normal nav -->
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--NAV FOR MOBILE-->
+            <nav role="navigation">
+            <div id="menuToggle">
+                
+                <input type="checkbox" id="menuCheckbox" />
+                
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                
+                <li>
+                    <a href="#">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">Portfolio</label>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">Services</label>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                    <label for="menuCheckbox" onclick="this.parentNode.click();">Contact</label>
+                    </a>
+                </li>
+
+                </ul>
+            </div>
+            </nav>
+    </header>
+
+        <section id="main">
+            <div class="hero">
+                <img src="IMG/hero-img.png" alt="Logo">
+
+                <h2>Built for artists who live in the shadows of sound.</h2>
+
+                <p>
+                    RavenWave Studios in Richmond, VA is the creative home of Damian Winn — producer, engineer, and songwriter. Specializing in dark pop, hard  rock, and genre-bending production, RavenWave helps artists shape bold,  emotionally charged music that leaves a mark.
+                </p>
+                <div class="contact--btn">
+                    <li><a href="#contact" class="btn">Contact</a></li>
+                </div>
+
+                <div class="ig-link">
+                    <img src="IMG/IG icon.png" alt="Instagram">
+                    <a href="https://www.instagram.com/ravenwavestudios?igsh=cnR5b2hlZTFjN2Uy" style="display: none;"></a>
+                </div>
+            </div>
+
+            <div class="portfolio" id="portfolio">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                    <div class="block">
+                        <h3>Production</h3>
+                        <div class="player">
+                            <p>Track 1</p>
+                            <audio controls>
+                                <source src="03. RAINBOWS.mp3">
+                                Browser does not support audio
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Mixing & Mastering</h3>
+                        <a 
+  href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0" 
+  class="dropbox-embed"
+></a>
+                        <a
+  href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0"
+  class="dropbox-embed"
+  data-height="300px"
+  data-width="600px"
+></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="wrapper">
+                <h2>Services</h2>
+                <div class="art-blocks">
+                    <article>
+                        <h3>Remote Production</h3>
+                        <p>
+                            Full-scale music production from a distance—send your demo or rough  idea, and I’ll help develop it into a polished track, handling  arrangement, instrumentation, and creative direction.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Topline Writing</h3>
+                        <p>
+                            Crafting memorable vocal melodies and lyrics to bring your instrumental to life or enhance your song’s emotional impact.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Session Recording (Guitar/Bass/Vocals)</h3>
+                        <p>
+                            High-quality tracking of live instruments or vocals, recorded with  professional gear and attention to tone, feel, and performance.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Mixing</h3>
+                        <p>
+                            Balancing, enhancing, and refining your multi-track session into a  cohesive, release-ready mix that translates across all listening  platforms.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Mastering</h3>
+                        <p>
+                            Final audio polish to ensure your track sounds loud, clear, and competitive—optimized for streaming, radio, or sync licensing.
+                        </p>
+                    </article>
+                </div>
+                <div class="pics">
+                    <img src="IMG/service-pic1.jpeg" alt="">
+                    <img src="IMG/service-pic-2.jpeg" alt="">
+                    <img src="IMG/service-pic-3.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form action="">
+                    <input type="text" name="name" placeholder="Name">
+
+                    <input type="email" name="email" placeholder="Email">
+
+                    <select name="service_select" id="" aria-placeholder="--service--">
+                        <option value="production">Production</option>
+                        <option value="writing">Writing</option>
+                        <option value="session recording">Recording</option>
+                        <option value="mix/master">Mix/Master</option>
+                    </select>
+
+                    <textarea name="message" id="" placeholder="Message"></textarea>
+
+                    <button class="form--btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="ig-link">
+                <img src="IMG/IG icon.png" alt="Instagram">
+                <a href="https://www.instagram.com/ravenwavestudios?igsh=cnR5b2hlZTFjN2Uy" style="display: none;"></a>
+            </div>
+            <div class="logos">
+                <img src="IMG/Raven.png" alt="Logo">
+            </div>
+            
+            <h2>RavenWave</h2>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="pyglgaibpgeh9kz"></script>
+</body>
+</html>
