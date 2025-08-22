@@ -96,26 +96,21 @@
                     <h2>Portfolio</h2>
                     <div class="block">
                         <h3>Production</h3>
-                        <div class="player">
-                            <p>Track 1</p>
-                            <audio controls>
-                                <source src="03. RAINBOWS.mp3">
-                                Browser does not support audio
-                            </audio>
-                        </div>
-                    </div>
+                        <a
+                            href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0"
+                            class="dropbox-embed"
+                            data-width="100%"
+                            data-height="300px"
+                        ></a>
                     <div class="block">
                         <h3>Mixing & Mastering</h3>
-                        <a 
-  href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0" 
-  class="dropbox-embed"
-></a>
+                        
                         <a
-  href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0"
-  class="dropbox-embed"
-  data-height="300px"
-  data-width="600px"
-></a>
+                            href="https://www.dropbox.com/s/u0bdwmkjmqld9l2/dbx-supporting-distributed-work.gif?dl=0"
+                            class="dropbox-embed"
+                            data-width="100%"
+                            data-height="300px"
+                        ></a>
                     </div>
                 </div>
             </div>
@@ -166,21 +161,22 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <form action="">
-                    <input type="text" name="name" placeholder="Name">
+                <form action="contact.php" method="post">
+                    <input type="text" name="name" placeholder="Name (Required)" class="input" required>
 
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email (Required)" class="input" required>
 
-                    <select name="service_select" id="" aria-placeholder="--service--">
+                    <select name="service_select" aria-placeholder="--service--" class="input" required>
+                        <option value="none">--select--</option>
                         <option value="production">Production</option>
                         <option value="writing">Writing</option>
                         <option value="session recording">Recording</option>
                         <option value="mix/master">Mix/Master</option>
                     </select>
 
-                    <textarea name="message" id="" placeholder="Message"></textarea>
+                    <textarea name="details" class="input" placeholder="Details (Optional)"></textarea>
 
-                    <button class="form--btn">Submit</button>
+                    <button type="submit" value="send" class="form--btn">Submit</button>
                 </form>
             </div>
         </section>
